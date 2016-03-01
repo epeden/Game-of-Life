@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+	<title>Conway's Game of Life</title>
+	<link href = "a2.css" rel = "stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery-1.11.3.js"></script>
+	<script src="gol.js"></script>
+</head>
+<body>
+	<h1>Conway's Game of Life</h1>
+	<p1>Press "New Game" to update settings.</p1>
+	<table class="display">	
+		<tr>
+			<th>
+				<div id="controls">
+					<table id="control_table">
+						<tr>
+							<th>
+								<div id="game_setup">
+									<table id"size_table">
+										<tr>
+											<th>
+												<button id="new_button"class="btn btn-primary">New Game</button>
+											</th>
+											<th>
+												<div id="grid_size">
+													<h3>Size of grid:</h3>
+													<label>Width: <input id="width_input" type="text" name="width" value="50"></label><br>
+													<label>Height: <input id="height_input" type="text" name="height" value="50"></label><br>
+													<div><label>Generation Speed: <input id="speed_input" type="text" name="speed" value="500"> ms</label><br></div>
+												</div>
+											</th>
+
+										</tr>
+									</table>
+								</div>
+								<div id="buttons">
+									<div>
+										<button id="pause_button">Start</button>
+										<button id="step_button">Step</button>
+										<button id="clear_button">Clear</button>
+										<button id="random_fill_button">Randomly Fill</button>
+									</div>
+									<div><label id="generation">Generation: 0</label></div>
+								</div>
+							</th>
+							<th>
+								<div id="in_game_controls">
+									<h3>Game Rules: </h3>
+									<label>Neighborhood radius: <input id="r_input" type="text" value="1"></label><br>
+									<label>Lonliness threshold: <input id="l_input" type="text" value="2"></label><br>
+									<label>Overpopulation threshold: <input id="o_input" type="text" value="3"></label><br>
+									<label>Generation min: <input id="gmin_input" type="text" value="3"></label><br>
+									<label>Generation max: <input id="gmax_input" type="text" value="3"></label><br>
+									<label>Perimeter Rules: 
+										<form>
+											<input type="radio" name="perimeter"id="r1" value="always_alive">Always Alive<br>
+											<input type="radio" name="perimeter" id="r2" value="always_dead" checked>Always Dead<br>
+											<input type="radio" name="perimeter" id="r3" value="toroidal">Toroidal<br>
+										</form>
+									</div>
+								</th>
+							</tr>
+						</table>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<div id="gameboard">
+					</div>
+				</th>
+			</tr>
+		</table>
+
+	</body>
+	</html>
