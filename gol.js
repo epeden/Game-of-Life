@@ -64,7 +64,7 @@ $(document).ready(function () {
 
 		current_game = new GameOfLife($("#gameboard"), width, height, speed,r,l,o,gmin,gmax,perimeter);
 	});
-
+// TEST COMMENT 2
 $("#step_button").click(function (e) {
 	e.preventDefault();
 	if (current_game != null) {
