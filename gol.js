@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 	var current_game = new GameOfLife($("#gameboard"),50,50,500,1,2,3,3,3,"always_dead");
 
-
+	// TEST COMMENT 1
 	$("#new_button").click(function (e) {
 		e.preventDefault();
 
