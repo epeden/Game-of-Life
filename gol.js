@@ -244,7 +244,7 @@ var Cell = function (gameoflife,x, y) {
 
 Cell.WIDTH = 10;
 Cell.HEIGHT = 10;
-
+// TEST COMMENT 2
 Cell.prototype.leftclick = function(recursed) {
 	if (this.alive == false) {
 		this.live();
