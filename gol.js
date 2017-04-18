@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+	// TEST COMMENT 1
 	var current_game = new GameOfLife($("#gameboard"),50,50,500,1,2,3,3,3,"always_dead");
 
 
